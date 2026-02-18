@@ -1,0 +1,56 @@
+.page {
+  height: 100%;
+  width: 100%;
+  background: #000000ba;
+  color: white;
+  overflow: auto;
+
+  .container {
+    height: 100%;
+
+    table {
+      width: 100%;
+      // border-collapse: collapse;
+
+      thead {
+        tr {
+          th {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            font-size: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 10px 0px;
+            background-color: white;
+            color: black;
+          }
+        }
+      }
+      tbody {
+        overflow: auto;
+
+        tr {
+          td {
+            font-size: 15px;
+            text-align: center;
+            text-transform: capitalize;
+            padding: 10px 0px;
+          }
+
+          &:nth-child(odd) {
+            td {
+              background-color: #ffffff1a;
+            }
+          }
+
+          &.active {
+            td {
+              background-color: #4caf50;
+            }
+          }
+        }
+      }
+    }
+  }
+}

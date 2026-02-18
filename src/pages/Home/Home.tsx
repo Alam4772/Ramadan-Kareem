@@ -18,7 +18,7 @@ export default function Home() {
       <div className="home-page-container">
         <div className="home-page-content">
           <div className="heading">
-            <h2>Ramadan</h2>
+            <h2 className="text-uppercase">Ramadan</h2>
             <h2>2026</h2>
             <h3>
               <Date />

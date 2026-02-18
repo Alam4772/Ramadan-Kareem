@@ -1,23 +1,24 @@
 import { useSelector } from "react-redux";
-import "./style.scss";
+import styles from "./style.module.scss";
 import moment from "moment";
 import { RootState } from "../../shared/store";
+import { useCallback } from "react";
 
 export interface Props {}
 
 export default function TimeTable() {
   const records: Array<any> = useSelector(
-    (state: RootState) => state.ramadanTimeTable
+    (state: RootState) => state.ramadanTimeTable,
   );
 
-  const isToday = (date: string): boolean => {
-    return moment(new Date(date)).isSame(moment(), 'day');
-  };
+  const isToday = useCallback((date: string): boolean => {
+    return moment(date).isSame(moment(), "day");
+  }, []);
 
   return (
-    <div id="time-table-page">
-      <div className="page-container">
-        <table>
+    <div className={styles.page}>
+      <div className={styles.container}>
+        <table className={styles.table}>
           <thead>
             <tr>
               <th>Day</th>
@@ -32,7 +33,9 @@ export default function TimeTable() {
               return (
                 <tr
                   key={index}
-                  className={isToday(record.date) ? "active" : "inactive"}
+                  className={
+                    isToday(record.date) ? styles.active : styles.inactive
+                  }
                 >
                   <td>{record.day}</td>
                   <td>{record.date}</td>
