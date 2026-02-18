@@ -18,7 +18,7 @@ const notificationSlice = createSlice({
       if (state == "granted") {
         new Notification(action.payload.title, {
           body: action.payload.text,
-          icon: "/icon-192x192.png",
+          icon: "/icon-192x192.jpg",
         });
       }
       return state;
