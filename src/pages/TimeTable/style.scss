@@ -1,0 +1,45 @@
+#time-table-page {
+  height: 100%;
+  width: 100%;
+  background: #000000ba;
+  color: white;
+  overflow: auto;
+
+  table {
+    width: 100%;
+    thead {
+      tr {
+        th {
+          font-size: 15px;
+          text-align: center;
+          text-transform: uppercase;
+          padding: 10px 0px;
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          font-size: 15px;
+          text-align: center;
+          text-transform: capitalize;
+          padding: 10px 0px;
+        }
+
+        &:nth-child(odd) {
+          td {
+            background-color: #ffffff1a;
+          }
+        }
+
+        &.active {
+          td {
+            background-color: #4caf50;
+          }
+        }
+      }
+    }
+  }
+}

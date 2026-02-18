@@ -1,0 +1,120 @@
+#dua-category-page {
+  height: 100%;
+  width: 100%;
+  background: #000000ba;
+  color: white;
+  overflow: auto;
+  display: flex;
+  flex-flow: column;
+
+  .dua-header {
+    padding: 10px 0px;
+    background-color: #0a0a0a;
+
+    h1 {
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  .category-list {
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-flow: column;
+    row-gap: 5px;
+
+    .category-item {
+      padding: 15px 10px;
+      background: #8bc34abf;
+      border-radius: 10px;
+      border: 1px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h3 {
+        margin: 0;
+      }
+    }
+  }
+}
+
+#dua-list-page {
+  height: 100%;
+  width: 100%;
+  background: #000000ba;
+  color: white;
+  overflow: auto;
+  display: flex;
+  flex-flow: column;
+
+  .header {
+    padding: 10px 0px;
+    background-color: #0a0a0a;
+
+    h1 {
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  .dua-list {
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-flow: column;
+    row-gap: 5px;
+
+    .dua-item {
+      padding: 15px 10px;
+      background: #f4433699;
+      border-radius: 10px;
+      border: 1px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h3 {
+        margin: 0;
+      }
+    }
+  }
+}
+
+#dua-page {
+  height: 100%;
+  width: 100%;
+  background: #000000ba;
+  color: white;
+  overflow: auto;
+  display: flex;
+  flex-flow: column;
+
+  .header {
+    padding: 10px 0px;
+    background-color: #0a0a0a;
+
+    h2 {
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  .content {
+    flex: 1;
+    overflow: auto;
+
+    p {
+      text-align: center;
+      font-size: 25px;
+      border-bottom: 1px solid #ffffffb5;
+      margin: 0;
+      padding: 25px 5px;
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
