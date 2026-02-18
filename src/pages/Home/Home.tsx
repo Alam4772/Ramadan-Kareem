@@ -50,6 +50,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <h4 style={{ position: "absolute", bottom: 0, color: "#FFF" }}>
+        Developed By: <span style={{ fontStyle: "italic" }}>Alam Inamdar</span>
+      </h4>
     </div>
   );
 }
